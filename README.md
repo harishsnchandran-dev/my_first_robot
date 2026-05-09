@@ -17,3 +17,18 @@ Publisher Node → hello_topic → Subscriber Node
 
 ## Run Locally
 ```bash
+cd ~/ros2_ws
+colcon build --packages-select my_first_robot
+source install/setup.bash
+ros2 run my_first_robot publisher_node
+```
+
+## Run with Docker
+No setup required — pull and run on any machine:
+
+```bash
+docker pull YOUR_DOCKERHUB_USERNAME/ros2-publisher:v1
+docker run YOUR_DOCKERHUB_USERNAME/ros2-publisher:v1
+```
+
+## What You'll See
